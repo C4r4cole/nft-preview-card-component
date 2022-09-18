@@ -1,0 +1,121 @@
+*{
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    background: hsl(217, 54%, 11%);
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    font-size: 15px;
+    color: hsl(215, 51%, 70%);
+}
+
+h1{
+    color: white;
+    font-size: 20px;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(216, 50%, 16%);
+    width: 250px;
+    height: 410px;
+    padding: 45px 20px 30px 20px;
+    border-radius: 15px;
+    box-shadow: -5px 30px 20px 15px hsl(215, 54%, 9%);
+}
+
+.image{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.overlay-image{
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-image img{
+    vertical-align: middle;
+}
+
+.overlay-image .hover-image {
+    /* Positionnement du contenu hover */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    /* Effets de transition */
+    opacity: 0; /* On cache l'élément via son opacité */
+    transition: opacity 0.25s ease-in-out; /* Effet de transition sur le hover */
+    
+    /* Style du contenu hover */
+    background-color: hsl(178, 100%, 50%); /* Couleur par défaut */
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    
+    /* Centrer le contenu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .overlay-image:hover .hover-image {
+    opacity: 50%; /* Lors du hover, on remet l'opacité à 50% */
+    cursor: pointer;
+  }
+
+.texte{
+    width: 250px;
+}
+
+.superAvatar{
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.name{
+    color: white;
+    font-size: 14px;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.eth{
+    color: hsl(178, 100%, 50%);
+    font-size: 12px;
+}
